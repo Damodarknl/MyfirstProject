@@ -3,6 +3,7 @@ package com.org.mybank.service;
 import com.org.mybank.model.Constants;
 import com.org.mybank.model.NewCustomerDetails;
 import com.org.mybank.model.NewCustomerResponse;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service

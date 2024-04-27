@@ -23,7 +23,7 @@ public class RequestInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
-        NewCustomerDetails newCustomerDetails1 = objectMapper.readValue(request.getReader(), NewCustomerDetails.class);
+        NewCustomerDetails newCustomerDetails = objectMapper.readValue(request.getReader(), NewCustomerDetails.class);
         requestHeaders.setHeader1(request.getHeader("Header1"));
         requestHeaders.setHeader2(request.getHeader("Header2"));
         requestHeaders.setHeader3(request.getHeader("Header3"));

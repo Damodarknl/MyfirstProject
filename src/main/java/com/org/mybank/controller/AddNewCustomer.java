@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/mybank")
 public class AddNewCustomer {
 
-    @Autowired
+    //@Autowired
     NewCustomerDetails newCustomerDetails;
     @Autowired
     RequestHeaders requestHeaders;
